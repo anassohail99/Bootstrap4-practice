@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -262,7 +265,7 @@ i {
 /***************************************************clients section starts here********************************************/
 .clients {
   width: 100%;
-  padding: 80px;
+  padding: 100px;
 }
 
 .box {
@@ -332,8 +335,7 @@ i {
 /***************************************************Contact section starts here********************************************/
 .contact {
   width: 100%;
-  height: 100vh;
-  padding: 80px 0;
+  padding: 100px 0;
   position: relative;
 }
 
@@ -347,4 +349,107 @@ i {
   z-index: -1;
   background: linear-gradient(340deg, #16c9f6 55%, #fff 0%);
 }
+
+.form-button button {
+  border: 1px solid #50d1c0;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  background: transparent;
+}
+
+form:hover .form-button button {
+  background: #fff;
+  color: #50d1c0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+::placeholder {
+  font-size: 0.85rem;
+}
 /***************************************************Contact section ends here********************************************/
+
+/***************************************************News letter starts here********************************************/
+
+.news-letter {
+  width: 100%;
+  height: 25%;
+  margin: 80px auto;
+}
+.news-input {
+  border-radius: 100px 0px 0px 100px !important;
+  min-width: 150px;
+  min-height: 45px;
+}
+.input-group-text {
+  color: #fff !important;
+  background: #5bc0de !important;
+  border-radius: 0 100px 100px 0 !important;
+  min-width: 130px;
+  min-height: 45px;
+}
+/***************************************************News letter ends here********************************************/
+
+/***************************************************footer starts here********************************************/
+
+.footer-section {
+  width: 100%;
+  height: auto;
+  padding: 70px 0 20px 0;
+  background: #00abff;
+  position: relative;
+}
+.footer-section p {
+  color: #fff;
+}
+.footer-section li a {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.footer-section h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.footer-div {
+  padding: 30px;
+}
+
+.navbar-toggle {
+  color: #fff !important;
+}
+#mybtn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 5;
+  border: none;
+  color: #fff;
+  background: #00abff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#mybtn:hover {
+  background: #606060;
+}
+
+/**MEDIA QUERIES**/
+
+@media (max-width: 768px) {
+  .nav-item {
+    text-align: center;
+  }
+}

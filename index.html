@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="header" id="top-header">
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container text-uppercase p-2">
           <a class="navbar-brand font-weight-bold text-white" href="#"
             >Websters</a
@@ -47,16 +47,17 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
+                <a class="nav-link" href="#service">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Price</a>
+                <a class="nav-link" href="#pricing-div">Price</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#footer">About</a>
               </li>
             </ul>
           </div>
@@ -68,8 +69,8 @@
           <h1 class="font-weight-bold">We are web developers</h1>
           <p>We Create Worlds Best Websites</p>
           <div class="header-btns">
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="#clients-sec">About Us</a>
+            <a href="#contact-us">Contact</a>
           </div>
         </div>
       </section>
@@ -341,7 +342,7 @@
 
     <!--**************************************************Clients starts HERE********************************************-->
 
-    <section class="clients">
+    <section class="clients" id="clients-sec">
       <div class="container heading text-center">
         <h1 class="head text-center font-weight-bold ">
           OUR HAPPY CLIENTS
@@ -536,6 +537,7 @@
     </section>
     <!--**************************************************clients ends HERE********************************************-->
 
+    <!--**************************************************COntact us starts HERE********************************************-->
     <section class="contact" id="contact-us">
       <div class="container-fluid heading text-center">
         <h1 class="head text-center font-weight-bold">
@@ -543,7 +545,7 @@
         </h1>
         <p class="text-capitalize pt-1">
           We're here to help you. We look forward to help and answer all of your
-          questions and queries. Looking forward to hear form you
+          questions and queries.
         </p>
       </div>
       <div class="container">
@@ -593,16 +595,107 @@
                 placeholder="Message"
               ></textarea>
             </div>
-
-            <button type="submit" class="btn btn-light">Submit</button>
+            <div class="d-flex justify-content-center form-button">
+              <button type="submit" class="btn btn-light">Submit</button>
+            </div>
           </form>
         </div>
       </div>
     </section>
 
-    <!--**************************************************COntact us starts HERE********************************************-->
-
     <!--**************************************************COntact us ends HERE********************************************-->
+
+    <!--**************************************************News Letter starts HERE********************************************-->
+
+    <section class="news-letter">
+      <div class="container-fluid heading text-center">
+        <h1 class="head text-center font-weight-bold mb-5">
+          SUBSCRIBE TO OUR NEWS LETTER
+        </h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 col-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control  news-input"
+                placeholder="Your Email"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--**************************************************news letter ends HERE********************************************-->
+
+    <!--**************************************************Footer starts HERE********************************************-->
+
+    <footer class="footer-section" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 footer-div">
+            <div>
+              <h3>
+                About Myself
+              </h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                eligendi magni vel numquam error nesciunt ducimus consectetur
+                impedit sunt accusamus.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 footer-div ">
+            <div>
+              <h3>
+                Navigation Link
+              </h3>
+              <li><a href="#top-header">Home</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#pricing-div">Price</a></li>
+              <li><a href="#footer">About</a></li>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-12 footer-div">
+            <div>
+              <h3>
+                News Letter
+              </h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                eligendi magni vel
+              </p>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control  news-input"
+                  placeholder="Your Email"
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text">Subscribe</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 text-center">
+          <p>Copyright &copy 2020 Belongs to ABS</p>
+        </div>
+
+        <div class="scrolltop float-right">
+          <i class="fa fa-arrow-up" id="mybtn"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!--**************************************************footer ends HERE********************************************-->
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -626,11 +719,10 @@
 
     <script>
       $(".count").counterUp({
-        delay: 20,
-        time: 3000
+        delay: 10,
+        time: 2000
       });
     </script>
+    <script src="app.js"></script>
   </body>
 </html>
-
-<!--https://youtu.be/VuTjWcrFJTg?t=4173-->
