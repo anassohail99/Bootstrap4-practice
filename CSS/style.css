@@ -76,6 +76,9 @@ i {
   color: #fff !important;
   font-weight: bold;
 }
+.nav-item a:hover {
+  color: #1e5799 !important;
+}
 .header-section {
   width: 100%;
   height: inherit;
